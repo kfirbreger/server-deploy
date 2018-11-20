@@ -1,0 +1,19 @@
+version: '3'
+services:
+  patrns:
+    build: ./patrns
+    ports:
+      - "8001:80"
+  kfirbreger:
+    build: ./kfirbreger.com
+    ports:
+      - "8002:80"
+  bunnyapprovesthesechanges:
+    build: ./bunnyapprovesthesechanges
+    ports:
+      - "8003:8000"
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "80:80"
+
