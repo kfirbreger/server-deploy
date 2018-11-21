@@ -19,7 +19,7 @@ services:
       - conopa-net
 
   nginx:
-    image: nginx:alpine
+    build: ./reverseproxy
     ports:
       - "80:80"
       - "433:433"
