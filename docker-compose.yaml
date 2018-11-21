@@ -4,31 +4,20 @@ services:
     build: ./patrns
     expose:
       - "80"
+
   kfirbreger:
     build: ./kfirbreger.com
     expose:
       - "80"
-    networks:
-      - conopa-net
 
   bunnyapprovesthesechanges:
     build: ./bunnyapprovesthesechanges
     expose:
       - "8000"
-    networks:
-      - conopa-net
 
   nginx:
     build: ./reverseproxy
     ports:
       - "80:80"
       - "433:433"
-    networks:
-      - conopa-net
-    volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf
-      # - /etc/letsencrypt/:/etc/letsencrypt/
-
-networks:
-  conopa-net:
 
