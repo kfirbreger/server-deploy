@@ -1,9 +1,0 @@
-[submodule "bunnyapprovesthesechanges"]
-	path = bunnyapprovesthesechanges
-	url = git@github.com:kfirbreger/bunnyapprovesthesechanges.git
-[submodule "patrns"]
-	path = patrns
-	url = git@github.com:kfirbreger/patrns.git
-[submodule "kfirbreger.com"]
-	path = kfirbreger.com
-	url = git@github.com:kfirbreger/kfirbreger.com.git
