@@ -1,23 +1,22 @@
 version: '3'
 services:
   patrns:
-    build: ./patrns
+    image: kfirbreger/patrns
     expose:
       - "80"
 
   kfirbreger:
-    build: ./kfirbreger.com
+    image: kfirbreger/kfirbreger.com
     expose:
       - "80"
 
   bunnyapprovesthesechanges:
-    build: ./bunnyapprovesthesechanges
+    image: kfirbreger/bunnyapprovesthesechanges
     expose:
       - "8000"
 
   nginx:
-    build: ./reverseproxy
+    image: kfirbreger/conopa-reverseproxy
     ports:
       - "80:80"
       - "433:433"
-
